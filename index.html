@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<title>Sign up</title>
+</head>
+<body>
+  <div class="content">
+    <div class="left">
+      <h1>Sign up for your own account today!</h1>
+      <p>All you need is fill out the small form below to create an account.</p><br>
+        <input type="text" id="fullname" onclick="addName()" name="fullname" value="Full name">
+        <div id="errorname">
+          *Please enter your full name.
+        </div>
+        <input type="text" id="emailaddress" onclick="addEmail()" name="emailaddress" value="Email address">
+        <div id="erroremail">
+          *Please enter a valid email address.
+        </div>
+        <br>
+      <button id="submit" class="submit" onmouseover="submitAnimation()" onclick="submit()">Sign up</button>
+      <div class="bottom-left"><a href="#">Already have an account?</a></div>
+    </div>
+    <div class="right">
+      <img id="rocket" src="rocket.svg" width=80>
+    </div>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
